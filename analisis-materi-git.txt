@@ -1,0 +1,84 @@
+#GIT
+
+ 1. Pengenalan git
+    GIT (Group Inclusive Tour) merupakan Open Source Version Control System, sebuah tools yang dapat digunakan untuk melakukan manajement versi dari sebuah project
+
+    Terdapat 2 sistem VCS:
+    - Centralized
+        Terpusat, data project disimpan dalam sebuah server dan membutuhkan akses internet untuk mengaksesnya
+
+    - Distributed
+        Terdistribusi, data project disimpan pada sebuah server dan juga pada lokal komputer
+
+ 2. Fitur-fitur pada git
+    Beberapa fitur:
+    - Version Control
+        Sistem pada git yang memungkinkan untuk melacak perubahan source code atau berkas-berkas proyek secara terperinci
+
+    - Git Branch
+        Branch (cabang), merupakan salinan terpisah dari repository yang memungkinkan untuk bekerja pada fitur atau perubahan code tertentu tanpa mempengaruhi Branch(cabang) utama, biasanya disebut Branch Main/Master
+
+    - Merging
+        Proses penggabungan atau integrasi dari satu branch ke branch lainnya
+
+    - Staging Area
+        Terletak diantara working directory dan Git Repository, tempat untuk mempersiapkan perubahan sebelum membuat commit. Dengan adanya staging area kita dapat memilih perubahan yang akan di commit ke repository
+
+    - Git Rebase
+        Operasi pada git yang digunakan untuk mengubah sejarah commit pada sebuah branch. Proses rebase mengambil serangkain commit dari suatu cabang lalu menerapkannya(memindahkan) ke atas commit terbaru dari branch target.
+
+    - Hooks
+        Script yang dijalankan otomatis saat terjadi peristiwa tertentu seperti commit atau push. Hooks memungkinkan untuk menjalankan suatu tindakan khusus saat sebelum atau sesudah suatu peristiwa terjadi dalam repository.
+
+    - ...
+
+ 3. Perintah-perintah git
+    Beberapa perintah dasar :
+    - git init
+        initisasi git pada project
+    - git clone
+        cloning repository dari remote ke local
+    - git add
+        menambahkan file ke indeks git / staging area
+    - git commit
+        membuat snapshot/breakpoint sebelum di push
+    - git push
+        push/upload commit ke remote repository
+    - git pull
+        mengunduh perubahan dari remote repository ke project local
+    - git status
+        melihat status perubahan file/folder pada project
+    - git log
+        melihat riwayat commit/perubahan dalam Repository
+    - git diff
+        membandingkan versi saat ini dan sebelumnya
+    - git branch
+        membuat dan mengelola cabang(branch) dalam Repository
+    - git checkot
+        beralih antar cabang/branch atau beralih versi project
+    - git merge
+        menggabungkan branch ke branch utama
+    - git reset
+        menghapus perubahan dalam indeks git
+
+ 4. Bagaimana cara menggunakan git?
+    Untuk menggunakan git perlu melakukan instalasi git terlebih dahulu dan melakukan konfigurasi dasar dari git seperti konfigurasi user agar ketika melakukan commit dan push dapat diketahui user yang melakukannya
+
+    Kemudian lakukan initiaasi git pada project dan jalankan perintah-perintah yang ada pada git sesuai apa yang mau dilakukan
+
+ 5. Contoh Git repository
+    - Github
+    - Gitlab
+    - ...
+
+ 6. CI/CD
+    Dalam pembahasan GIT dapat berkaitan dengan CI/CD, yaitu sebuah proses dalam pengembangan perangkat lunak yang melaukan automasi dan mempermudah proses pengembangan, testing, dan distribusi
+
+    Proses automasi pada CI/CD biasanya dilakukan pada perubahan yang terjadi setelah ketika commit git repository dijalankan
+
+ 7. CI/CD Tools
+    - Github Action
+    - Gitlab CI/CD
+    - Jenkins
+    - CircleCI
+    - AWS Could Build
